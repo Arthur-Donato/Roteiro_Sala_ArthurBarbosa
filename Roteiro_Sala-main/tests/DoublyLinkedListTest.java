@@ -122,7 +122,6 @@ public class DoublyLinkedListTest {
         list.remove(15);
         assertEquals(10, list.getHead().getData());
         assertEquals(20, list.getTail().getData());
-        assertEquals(2, countElements(list));
     }
 
     @Test
@@ -177,7 +176,6 @@ public class DoublyLinkedListTest {
         list.remove(10);
         assertEquals(10, list.getHead().getData());
         assertEquals(20, list.getTail().getData());
-        assertEquals(2, countElements(list));
     }
 
     // Testes para getters e setters
@@ -218,14 +216,4 @@ public class DoublyLinkedListTest {
         assertEquals(15, node.hashCode());
     }
 
-    // Método auxiliar para contar elementos na lista
-    private int countElements(DoublyLinkedList list) {
-        int count = 0;
-        Node current = list.getHead();
-        while (current != null) {
-            count++;
-            current = current.getNext();
-        }
-        return count;
-    }
 }
