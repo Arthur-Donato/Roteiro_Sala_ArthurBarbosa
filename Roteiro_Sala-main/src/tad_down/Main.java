@@ -10,7 +10,7 @@ public class Main {
         list.insertOrdered(40);
 
         System.out.print(list.printForward());  // Esperado: 10 20 30 40
-        list.printBackward(); // Esperado: 40 30 20 10
+        System.out.println(list.printBackward()); // Esperado: 40 30 20 10
 
         list.remove(20);
         System.out.print(list.printForward());  // Esperado: 10 30 40
